@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Sep 13 22:18:01 2016
+
+@author: mathias
+"""
+
+def gcdRecur(a, b):
+    '''
+    a, b: positive integers
+    
+    returns: a positive integer, the greatest common divisor of a & b.
+    '''
+    if b == 0:
+         return a
+    else:
+        return gcdRecur(b, a % b)
+
+ 
+print (gcdRecur(12,9))
+ 
+ 
